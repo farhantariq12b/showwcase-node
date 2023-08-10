@@ -60,3 +60,8 @@ npm run test
 ```
 
 This command will execute the tests and display the test results in the terminal.
+
+## Postman
+
+Postman collection is added in order to test
+[ShowCase Postman](https://github.com/farhantariq12b/showwcase-node/blob/main/ShowCase.postman_collection.json)
