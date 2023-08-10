@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "2026e38e-0c87-4a0a-907b-fd371f7af490",
+		"name": "ShowCase",
+		"description": "Showcase API collection to create educational experience.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18220564",
+		"_collection_link": "https://www.postman.com/speeding-capsule-639707/workspace/local/collection/18220564-2026e38e-0c87-4a0a-907b-fd371f7af490?action=share&creator=18220564&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"repo\",\n    \"email\": \"repo4@gmail.com\",\n    \"password\": \"123\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/auth/signup"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"repo4@gmail.com\",\n    \"password\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/auth/login"
+					},
+					"response": []
+				}
+			],
+			"description": "Requests for authorization."
+		},
+		{
+			"name": "Home",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGQ1MDJlZGU3NzNhODQzZGVhZjY1MTIiLCJlbWFpbCI6InJlcG80QGdtYWlsLmNvbSIsImlhdCI6MTY5MTY5MTk3MiwiZXhwIjoxNjkxNjk5MTcyfQ.rzq_bJrAqHF7B6LfiBuztcTmoi4dnLtppMjPczn1Q-o"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000"
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGQ1MDJlZGU3NzNhODQzZGVhZjY1MTIiLCJlbWFpbCI6InJlcG80QGdtYWlsLmNvbSIsImlhdCI6MTY5MTY5MTk3MiwiZXhwIjoxNjkxNjk5MTcyfQ.rzq_bJrAqHF7B6LfiBuztcTmoi4dnLtppMjPczn1Q-o"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/users/random"
+			},
+			"response": []
+		}
+	]
+}
