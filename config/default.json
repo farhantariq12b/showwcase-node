@@ -1,0 +1,12 @@
+{
+  "port": 3000,
+  "database": {
+    "connection": "mongodb://localhost:27017/showcase"
+  },
+  "randomApiUrl": "https://randomuser.me/api/",
+  "secretKey": "secret",
+  "timeouts": {
+    "login": "2h",
+    "refreshToken": "4h"
+  }
+}
